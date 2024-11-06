@@ -4,10 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>Gerenciamento de Desenvoledores</title>
 </head>
 <body>
-  <h1>Biblioteca</h1>
+  <h1>Cadastrar</h1>
+  <main>
+    <form>
+
+      <div class="input-data">
+        <label for="Nome Completo">Nome Completo</label>
+        <input type="text" id="nome completo"/>
+      </div>
+      
+      <div class="input-data">
+        <label for="Tecnologias">Tecnologias</label>
+        <input type="text" id="tecnologias"/>
+      </div>
+      
+      <div class="input-data">
+        <label for="Biografia">Biografia</label>
+        <input type="text" id="biografia"/>
+      </div>
+      
+      <div class="input-data">
+        <label for="Usuario-Git">Usuario-Git</label>
+        <input type="text" id="usuario-Git"/>
+      </div>
+
+      <div class="input-data">
+        <label for="Imagem(URL)">Imagem</label>
+        <input type="url" id="imagem" required/>
+      </div>
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALcAwwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAAEDBAUGBwj/xAA9EAACAgECAwQHBQcCBwAAAAABAgADEQQhBRIxE0FRYQYicYGRwfAUMqGx4QcjJDNSYtFCYxUWJVNygvH/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAQQCAwUG/8QAJREBAQACAgIBAwUBAAAAAAAAAAECEQMEEiExExQyBSIjM1FB/9oADAMBAAIRAxEAPwDGAhCKPiEHEWIhHEBxHiELEBYjiKOIDxQhGMATGMcwSYDExZjEwGMCQtBzAzHgGI8AGFAcQxBEIQHiEQjiA0UKDAUUaKBAI+IywoCxHxEI8BAQgIwEKAo4jRxAMdIJgs+JFZdtAkYyN2wCTgKBkljsPjK7amc16WcWBo+wVMeZyDZy9w8Py+EDW1XpFwyk4OpDn/b9aVqfSfQXansiWrTG1j7AzmuGejvFNegejTMUPexwDNbVehPFdNQLF0farjuO590xvJjGz6WVm3TJajAMrhgdxynMMNvOD0Wv1fBbmChmrB5bKrNsH5GdbwzX0a6gW0k+DKeombXZppjpDEiQyUQDBjiCIQgEBHHWMDHkBjGhRsQGij4igVh0j98cRYgOI+IgI8BCEIIhQFBZ4mMgubaANtspX3wrnlK49YEWr1TpUzIMsOg8ZzvA6jxDjdfaDmy/McjrNHid3ZUHH3jnAj+hdL9tfqEZVdCAHf7qd5Y+6Y8l1jts48fLLT2D0d4dWmlXK9wm4+iVlx5TmfRrirC9aqeJ6TWINmQJyOMeGJ0XHeI26TSg6WzTVbZezUZ5VX3YnO8fbp+Xp5V+0rhddB+2IoUhhXZ5gnrOT9F3bT8RetmwjLvvtnz/ABnonHP+saG6p9TpdZWUPM2nQryEdOpOd55dwSw18QFLjZ2UY8wQf8/GXeC/t0pdmTy29ARsnMnUypUdhLKTeqJxHgLCEAswgYAMeEjjd8aNIBxQIoEQhQRCElB48Y9IswHEeMI8JC0qXtLVh2lHUN1kCpcesp3ttLFpmfrG/dmSlicXsJvA7gNvnOu/ZtpUYFrQGW9irLjbIwMe/M4vUh3tIGMHoMzc/Z5qko461Nz8psX1T/cP0zNPNLcLpu4Lrkj2rU6PRaTTg111h2GECAZzj9JPfRVYtI1lY5SgxzDOJhayy0a9Kbr9PXpL1BrturZ8v/S2Dt/9lnij/YdN2tHEdG9vLilKtOzl2HRc52/WUJjbNupdb0P0i0ek0fDLrdOlaMyEE1jrtPBWsVbjapGa29Q95APfPYPSu86D0V1VustX7QaiMLnAdhjAHtnimkXmfBYhTue7PvlrrS+1Ht2bkd/oNVVqEDVsCcZx3zQQ7D5TkeF69l1VSU1gUNhBk5M6tDLilVhYY6yNDJBFQIQhBjiQk8aPFAaKKKBGI8aPCDx4wEWIBCKMI8CK07TP1J6y/f0mbqD1kxKnaZna1sIzcvQGXbmmRxO9q6iV6kYEVLIqvZS9mSzZyF8RIK7HqvW2s8tisCpXuPlJ9OG5mcVlj5nE2eH8GuvXTsLEetnPOFOcY3x+c1Z5yfLbhx3L3HpXAOJLZ2VfEQGUj1Xb7p9s6LiWr4XpKg1fZtZjbl3J9gmZwfhSNWtNqc2V9WaV/BqaUZ1rXIGdhOXb7rqT4eN/tA41qeJcV7C04rpI/dDoGP6Tn7LFbkwSuM8zCaHpEOX0h1BtOzWkscdNyMTKsKKg5RvnfzE6mE1jHK5LvKtbhVo+0LVS3MQmxIx5mdTwq57UKOCCmBg+E43h2oXTMuqZehxhe7qPmZ2OgasUqaTlX3z45myNVaaNneTAyspwcGTBpkhJmFmR5hAzEHEIOY+doCijRQAhCDCkghHgZhCKCAjNEWkVlkgDe20y9U3WWr7Jm6husCAqbX7Nd89/hLB4FVbWO1OXG4yNsy7wjTqSrkesSPhNWhMV8jnPKxH6/CcfsdzO56x+Hd63RwmG8vlzNPBtHysbuYqBuoGPrr+E0tP2VVtOmROyGwQVj+UM/eMs2pZ2z+rnYcoxsTM5aX0euTUahji7HM39LdPh0mmcty/KrF4ccZ6j0nhums06qWuNvJ3YAI93fNG3VdrUqMrKbAcDl3HTumf6P6ivV0KwfNgwLF7xNyzTLyHDbSxjq+1TL16fO/pZWyekeruuDAOwdS64yCBuJBqNINXwdNbQBz0sUdR/qTqDjy756P6f8Ao4pq6lW4rdXuwAzt4e/wDxOQ1XC20ujRqAC+mtJXuLL3j3/kJY+5w9Y7aJ1c7vKxy21lKrUrj+teo9onS8F1IdFrbmqPVVDZ29/wBbysnCDVW9tJxWfXQ53IO4E0NJwPsrNNdkiwAkKSdhgfMzb9zhK0/Z8mrWzWZMplWokYB2IkwaWpZZuKdmrpPmGDIAYYaEJeaLMEdIxMUHzRQIpAIGPBEISQ8WY2YLNAVjypbZDteVLGgBc8pWtzbSxZ0ldRm4E92/1+Exzy8cbWeGPllI3uGry1o6ezHy/KaSgFmOdiAfh9D4TP0mByMv3LgGz4NLzMQwJ6/X17p5jP5eswn7Qkesc9x39h+jI9Rp69TX2VgO/hJLDl0PkYYkb0lT0Oo1nCbEcO1lanaxR6yjwI7xO8Ti62ej54hSEavPIcuMB/D2fKcjyyrbV2TFl2QtzFAdicdcTdx82t7aOXgl1Vq283uz45mY5LHvJlW2sNuwyTtvLJXG0jeaJfe2/wAZJpnamhGFWmRMcz5PsBzJtKna2W2noXKj2Ln5n8JKF5Xa0jcLtD0tJqqpU/eSv4se/wDCbLl60wmPvbM1YxdnxMStH4hV2JU5zkkfrIlad/q5eXDi853MfHmyTqYYMhUyRZYVUgMfMER8SQ+YosRSBII46xoswHJkbmEx2kLmBDaZWYyaw9ZC0JQ2Q9NUjUXNgNafVQHugPJOHsBqAuM5b5EfQlfty3iulnqWTlm2nwz7M+iYDV2cyv1rqLhF/POd5s08OHEBanDtVXe9aczVsnI4B/tMrcH1VaUWGvULTU+CqNplVcY6nw+M7GuqvXpVbZVVYK/uazSWYZT37Dcee+8584cb8unexljfThNNaxd6rAUtqcowPUES4TN7jXDF17G8MpuQbXINz5MJzoLVW9jqFC2gdPEeIlLl4bjdr3Fy+SRYNv8ALPviBxFY69gQV9YNzZ5u7HTHSaJut9E3WCQuI5OSe/zjGRRX1bEVHHdjPszv+H5y9oKLrqrbeUMaUBtOcY8vb1xIKtL9sv7JmNdIU2WuDjCLuce2dFRpaHWqvU1vp6rV5qtBUcFh/U5lvi4fPHdVeXnmF1HJ8Qo56y3Xl3H17ploZ3PFsaLhVmmtoQ0O5WsI/qo2+c75JnCqQWPZnnUnZl3zOl0v45cHJ70+pZyJ1MlUyFd5IpnRc1KIQgrDxAUUWIpAMGLMERGAzmVrDJrOkrvAiYyNobdZGZKUTyNWKW1sDg8wxJXkLTXlNzTLC6y27D0Z7TV6Ktya+Y0Kn7ysHl26Azq+H1aDQB35V0d9m9j1jFdnme7PtE4r0OvOTWO47iegfZUsqU45gZzct45adWayx2mWlLf3gfmB/wBY6n/My+NcAq1wBJAdd1dfVI9n1iX04dp62L0lqX8U2h2W31DNnJqU8/Vb8OsXVnslsvpw2o4PrqFIFyMAcjK4JHhiVqdDxK+tzXQWA2YH1TnHhO/4bxbhdXGOXUctFz18tYv9Veu+D08Ph5y/q7tHquIs9Lq1fIo5wchjv090xvV47jtnO3yTLxeYvTr6v5mis+AMDtLu/S3D/wBTPTDpqX8IvsGn8pp+1xbvu8nnHCHvfiDnU6S5dMmNuUg2YOcezOD7hOhXUal27U6Oy1nJax1bBHgi+A7p1I0enXwiNKLvWwljHHxmlfLPyy3XJGl7SdRqtKtfLkV1jdUHl5+c4IKE4pxKsfc+0Fl94BM9Z4of3T9p4TyllYa7Wu3R78j2BVB/Kbet+bV2b/GnXrDEjENZ0XLSrJAZCpkoMigsxQcxSA8RjRjJAsZA8meQvBULSIyVpEYIBpE0laROJFSu8A1q6HildlhwjbNk4npOh43pOXl7VfLeeQWwaqWYc6FgRvscbSl2MNTyXurnb+x7cOLac7A8x8oX/EKG+8MTyHTNxStv3OobOccrd+2fmJr6XinHKeUMtb5HTOPCU7nP9X5xX/Hoth0WoGLArjwYZ/OVzw/QE5psNB7jU3Lv7Ok5Kvj3FEG+jpY4/wC7+km/5k4oGA/4dRv0zd+kj6mP+p+jn/yOjZdfpWzVqqdVX4MeRx8j+Enp4tWx5LSa7OnK+xnMn0h4tyns9LpE8i5PymbqOO8R17Xae1NOnIpGey5sMR5noCRv4d3dMpnjfiovHnPmO+fWV8h3A98y9dxevSrk2pj2zzm6jig9Ztfcebb1Dyr8JRSvUCy4XvZaeuXJOJljcM7rbDPHLCb07rWekuntpb11JAIAB3JnK85dizdWOTKyGTLOhxcM4/hzObnvJ6qZZKshUyVZYaEqw5GIYkVB4o8UgKImLMRkgGkLiTkSMiBWIgMJZZZE6wKzCRPLDCV7ISq2y/w1FstrTl2PKD+JlGya3A6uZy/9Cfnj/BlDvXWEdL9Om+SrWn3uQ+LuT7Onyl52/il/8Pn+kq/y9Wntlph/FDw5PnONk7mPr0kLYevzyPw/SF0kGsbszS3hYP8AHzk3fMWcOTKuoX1lsTqGBb+4AEfkZaxBsUEYzg9QfCJdFm0FgzWD4ynfSO1B7n2Mv5LKQRv3jwlewYHsmUuvbDKTWqx2QV3Mh7sEQ0kmtX10byIPu6fnArOwno+DLy45Xl+xx/T5LilWSrIlkqza0pBCzAEMSUFmKPFIDx4ooQfEEiKKADCQWRRQyVnkFvSKKSKlk6HgVeNKW/qIH18Yopy/1H8Y6v6X+dTXj+KWW32If3RRTkZO1PlV4o38OPI5lpX2D+O8eKZX8SfJ+bMEx4pgyROMEOPYZFYMbjoY8UyjHL4Z2qPPVb/tuPr8ZXTeKKd3o/1PO9/+1KslUxRS4opAYQiigPmPFFA//9k=" alt="">
+
+      <button id="Salvar">
+        Salvar
+      </button>
+      <h2>Lista de Desenvolvedores</h2>
+        <div id="devList"></div>
+    </div>
+    </form>
+   
+
+  </main>
 
 
 
